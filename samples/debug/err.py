@@ -6,7 +6,8 @@ def bar(s):
     return foo(s) * 2
 
 def main():
-    bar('0')
-
-main()
-
+    try:
+        bar('0')
+    except Exception as e:
+        print(e)
+a = main()
